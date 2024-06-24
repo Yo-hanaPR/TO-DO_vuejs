@@ -1,0 +1,148 @@
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+
+// Estilos globales
+div{
+    background-color: #d1f1de;
+    padding:30px;
+    border:1px solid green;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  color: rgb(26, 54, 148);
+}
+
+li{
+    margin:20px;
+}
+.container{
+  margin:30px;
+}
+button {
+  background-color: aquamarine;
+  color: #000;
+  margin-left:12px;
+  padding: 10px 20px;
+  border: 10px;
+  cursor: pointer;
+}
+
+input{
+    padding:9px;
+}
+
+.completada{
+  background:#f9daf5;
+}
+.tarea{
+  border: 1px solid black; 
+  border-radius:10px; 
+  padding:30px;
+  margin:20px;
+}
+
+input, textarea{
+  padding:20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.image-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/** NAVBAR*/
+
+/* Estilos generales de la barra de navegación */
+.navbar {
+  background-color: #007bff; /* Color de fondo */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  padding: 10px 0; /* Espaciado interior superior e inferior */
+  .container {
+    display: flex; /* Flexbox para alinear elementos */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    max-width: 1200px; /* Ancho máximo para el contenido */
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 0 20px; /* Espaciado interior izquierda y derecha */
+  }
+  .navbar-brand {
+    font-size: 1.5rem; /* Tamaño de fuente del logo */
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Sin subrayado enlaces */
+    &:hover {
+      text-decoration: none; /* Hover sin subrayado */
+    }
+  }
+  .navbar-nav {
+    display: flex; /* Flexbox para lista de navegación */
+    list-style-type: none; /* Sin viñetas */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin relleno */
+    .nav-item {
+      margin-right: 1rem; /* Espacio entre elementos de la lista */
+      .nav-link {
+        color: #fff; /* Color del texto de enlace */
+        text-decoration: none; /* Sin subrayado */
+        &:hover {
+          text-decoration: underline; /* Subrayado al hacer hover */
+        }
+      }
+    }
+  }
+}
+
+/* STATS*/
+.container-stats {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 20px;
+
+  .stats {
+    display: flex; /* Utilizamos flexbox para alinear contenido */
+    align-items: center; /* Alineamos verticalmente el contenido */
+
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+
+    .icon {
+      font-size: 24px; /* Tamaño del icono */
+      margin-right: 10px; /* Espacio entre el icono y el texto */
+    }
+
+    .content {
+      flex: 1; /* El contenido se expande para ocupar el espacio restante */
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 5px; /* Espacio inferior reducido */
+      color: #333;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #666;
+    }
+    .count{
+      font-size: 50px;
+    }
+  }
+}
